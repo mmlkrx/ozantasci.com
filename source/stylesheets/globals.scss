@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import "variables";
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: $black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body, ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

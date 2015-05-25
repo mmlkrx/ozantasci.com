@@ -7,13 +7,26 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title>Ozan Tasci - Portfolio</title>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= stylesheet_link_tag "globals" %>
     <%= javascript_include_tag  "all" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="navbar">
+      <ul>
+        <li>REEL</li>
+        <li>SHORTS</li>
+        <li>COMMERCIALS</li>
+        <li>MUSIC</li>
+        <li>IMAGE FILMS</li>
+        <li>EVENTS</li>
+        <li>CONTACT</li>
+      </ul>
+    </div>
+    <div class="content">
+      <%= yield %>
+    </div>
   </body>
 </html>
