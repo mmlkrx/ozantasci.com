@@ -1,0 +1,48 @@
+@import "variables";
+
+.sidebar {
+  background-color: $black;
+  width: 15em;
+  position: fixed;
+  height: 100vh;
+}
+
+.info-blurb, .nav {
+  width: 70%;
+  margin: auto;
+}
+
+.info-blurb {
+  color: $white;
+  margin-top: 3em;
+  font-size: 14pt;
+}
+
+.nav {
+  margin-top: 2em;
+
+  .active {
+    color: $white;
+  }
+
+  li {
+    margin: .3em 0;
+  }
+
+  a {
+    color: $grey;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+}
+
+.content {
+  background-color: $black;
+  height: 100vh;
+  width: calc(100% - 15em);
+  position: relative;
+  left: 15em;
+}

@@ -9,21 +9,27 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Ozan Tasci - Portfolio</title>
 
-    <%= stylesheet_link_tag "globals" %>
+    <%= stylesheet_link_tag "globals", "layout", "index" %>
     <%= javascript_include_tag  "all" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <div class="navbar">
-      <ul>
-        <li>REEL</li>
-        <li>SHORTS</li>
-        <li>COMMERCIALS</li>
-        <li>MUSIC</li>
-        <li>IMAGE FILMS</li>
-        <li>EVENTS</li>
-        <li>CONTACT</li>
-      </ul>
+    <div class="sidebar">
+      <div class="info-blurb">
+        OZAN TASCI<br>
+        VISUALIZATIONZ
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#reel">REEL</a></li>
+          <li><a href="#shorts">SHORTS</a></li>
+          <li><a href="#commercials">COMMERCIALS</a></li>
+          <li><a href="#music">MUSIC</a></li>
+          <li><a href="#image-films">IMAGE FILMS</a></li>
+          <li><a href="#events">EVENTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
     </div>
     <div class="content">
       <%= yield %>
