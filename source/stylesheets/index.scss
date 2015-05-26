@@ -2,8 +2,15 @@
 
 iframe {
   margin: auto;
-  position: relative;
-  left: 3em;
-  top: 3.8em;
   border: 6px solid $grey;
+  margin-bottom: 8em;
+}
+
+iframe:last-child {
+  margin-bottom: 16em;
+}
+
+section {
+  padding-top: 3.8em;
+  margin-left: 3em;
 }
