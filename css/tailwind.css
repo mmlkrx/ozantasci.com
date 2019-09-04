@@ -8,8 +8,6 @@
   background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
-@media (min-width: 640px) {
-  .sm\:top-1\/2 {
-  top: 50%;
-  }
+* {
+  /*border: 1px white dashed;*/
 }
