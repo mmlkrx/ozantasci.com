@@ -13013,7 +13013,7 @@ video {
 }
 
 * {
-  border: 1px white dashed;
+  /*border: 1px white dashed;*/
 }
 
 iframe {
@@ -13024,6 +13024,12 @@ iframe {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.menu-social {
+  transform: rotate(-90deg);
+  right: -66px;
+  top: 82px;
 }
 
 @media (min-width: 640px) {

@@ -9,7 +9,7 @@
 }
 
 * {
-  border: 1px white dashed;
+  /*border: 1px white dashed;*/
 }
 
 iframe {
@@ -18,4 +18,10 @@ iframe {
 .video-portrait {
   height: 80vh;
   width: fit-content;
+}
+
+.menu-social {
+  transform: rotate(-90deg);
+  right: -66px;
+  top: 82px;
 }
