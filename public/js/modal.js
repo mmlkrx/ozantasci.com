@@ -9,11 +9,19 @@ window.onclick = function(event) {
 }
 
 var myFunction = function() {
-  this.firstElementChild.className = "w-full"; // make hidden video iframe appear
-  var newHTML = this.firstElementChild.outerHTML; // save it's HTML
-  this.firstElementChild.className = "hidden"; // hiding so it's not showing up behind the modal
-  modal.firstElementChild.innerHTML = newHTML; // copy the HTML to the modal
-  modal.style.display = "block"; // show the modal
+  if (this.firstElementChild.classList.contains("video-portrait")) {
+    this.firstElementChild.className = "block video-portrait"
+    var newHTML = this.firstElementChild.outerHTML; // save it's HTML
+    this.firstElementChild.className = "hidden video-portrait"; // hiding so it's not showing up behind the modal
+    modal.firstElementChild.innerHTML = newHTML; // copy the HTML to the modal
+    modal.style.display = "flex"; // show the modal
+  } else {
+    this.firstElementChild.className = "block"; // make hidden video iframe appear
+    var newHTML = this.firstElementChild.outerHTML; // save it's HTML
+    this.firstElementChild.className = "hidden"; // hiding so it's not showing up behind the modal
+    modal.firstElementChild.innerHTML = newHTML; // copy the HTML to the modal
+    modal.style.display = "flex"; // show the modal
+  }
 };
 
 for (var i = 0; i < videoContainers.length; i++) {

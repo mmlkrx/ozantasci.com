@@ -9,5 +9,13 @@
 }
 
 * {
-  /*border: 1px white dashed;*/
+  border: 1px white dashed;
+}
+
+iframe {
+}
+
+.video-portrait {
+  height: 80vh;
+  width: fit-content;
 }

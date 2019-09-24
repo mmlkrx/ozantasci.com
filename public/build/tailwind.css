@@ -13013,7 +13013,17 @@ video {
 }
 
 * {
-  /*border: 1px white dashed;*/
+  border: 1px white dashed;
+}
+
+iframe {
+}
+
+.video-portrait {
+  height: 80vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media (min-width: 640px) {
