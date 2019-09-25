@@ -6,6 +6,7 @@
   <title>Ozan Tasci</title>
   <link rel="stylesheet" href="build/tailwind.css">
   <link href="https://fonts.googleapis.com/css?family=Astloch:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black text-white">
   <div class="p-4 bg-gray w-screen max-w-full max-h-full">
@@ -14,8 +15,8 @@
       <span class="mr-2 hover:text-green-300"><a href="https://vimeo.com/ozantasci" target="_blank">VIMEO</a></span>
       <span class="hover:text-green-300"><a href="mailto:info@ozantasci.com">E-MAIL</a></span>
     </ul>
-    <ul class="menu-about text-tiny font-extrabold absolute bottom-0">
-      <span>ABOUT</span>
+    <ul class="menu-about text-tiny font-extrabold absolute bottom-0 z-50">
+      <button id="about-btn">ABOUT</button>
       <span>-> 0157 4726630 30</span>
     </ul>
     <nav class="fixed bg-black top-0 w-screen py-4 text-2xl md:text-4xl md:absolute md:top-44/100 z-50 md:w-auto md:bg-transparent" style="font-family: 'Astloch', cursive; font-weight: 700;">
@@ -106,6 +107,26 @@
       <div class="md:absolute md:w-24/100 md:left-73/100 md:top-9/12 md:z-20">
         <img class="" src="img/dj_tomekk_text_you_back.jpg">
       </div>
+    </div>
+  </div>
+  <div id="about-content" style="z-index:100; font-family: 'Work Sans', sans-serif;" class="modal hidden w-screen h-screen flex justify-center items-center text-white absolute top-0">
+    <svg id="close-btn" class="w-8 cursor-pointer absolute top-4 right-4 fill-current text-white z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+      <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
+    </svg>
+    <div class="pt-24 about-text text-2xl relative">
+      <img class="w-64 absolute -top-10 -left-20" style="z-index: -1;" src="img/ozzy_about.png">
+      <p>Hey, most people call me Ozzy.</p>
+      <p>I'm a videoeditor based in Düsseldorf</p>
+      <p class="mb-4">and also love to do digital colorgrading.</p>
+      <p>Previously worked at Omstudios, Congaz and Gooqx.</p>
+      <p class="mb-4">Now doing freelance work.</p>
+      <p>Feel free to get in touch.</p>
+      <p class="mb-8"><a href="mailto:info@ozantasci.com">info@ozantasci.com</a></p>
+      <ul class="text-tiny font-extrabold">
+        <span class="mr-2 hover:text-green-300"><a href="https://www.instagram.com/ozantasci_/" target="_blank">INSTAGRAM</a></span>
+        <span class="mr-2 hover:text-green-300"><a href="https://vimeo.com/ozantasci" target="_blank">VIMEO</a></span>
+        <span class="hover:text-green-300"><a href="mailto:info@ozantasci.com">E-MAIL</a></span>
+      </ul>
     </div>
   </div>
   <div id="myModal" class="modal hidden fixed flex items-center z-50 left-0 top-0 w-full h-full overflow-auto">
