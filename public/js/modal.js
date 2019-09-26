@@ -61,6 +61,7 @@ document.addEventListener('click', function (event) {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
+    event.target.firstElementChild.innerHTML = ""; // remove iframe in case user clicks play and closes the modal
     modal.style.display = "none";
   }
   if (event.target == aboutPageContent) {
