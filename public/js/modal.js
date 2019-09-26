@@ -1,5 +1,6 @@
 var modal = document.getElementById("myModal");
 var aboutPageContent = document.getElementById("about-content");
+var videoName = document.getElementById("video-name");
 
 document.addEventListener('click', function (event) {
   if (!(event.target.matches('#about-btn') || event.target.closest('.video') || event.target.closest('.close-btn') || event.target.closest('#editing-btn') || event.target.closest('#ozzy-btn') || event.target.closest('#grading-btn'))) return; // if we don't click any of these special elements, don't do anything, if we do, continue with doing different things depending on the element
