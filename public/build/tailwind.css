@@ -9901,6 +9901,13 @@ video {
   left: 89%;
 }
 
+.-inset-8 {
+  top: -2rem;
+  right: -2rem;
+  bottom: -2rem;
+  left: -2rem;
+}
+
 .-inset-10 {
   top: -2.5rem;
   right: -2.5rem;
@@ -10391,6 +10398,16 @@ video {
 .inset-x-89\/100 {
   right: 89%;
   left: 89%;
+}
+
+.-inset-y-8 {
+  top: -2rem;
+  bottom: -2rem;
+}
+
+.-inset-x-8 {
+  right: -2rem;
+  left: -2rem;
 }
 
 .-inset-y-10 {
@@ -11171,6 +11188,22 @@ video {
 
 .left-89\/100 {
   left: 89%;
+}
+
+.-top-8 {
+  top: -2rem;
+}
+
+.-right-8 {
+  right: -2rem;
+}
+
+.-bottom-8 {
+  bottom: -2rem;
+}
+
+.-left-8 {
+  left: -2rem;
 }
 
 .-top-10 {
@@ -22336,6 +22369,13 @@ iframe {
     left: 89%;
   }
 
+  .sm\:-inset-8 {
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+  }
+
   .sm\:-inset-10 {
     top: -2.5rem;
     right: -2.5rem;
@@ -22826,6 +22866,16 @@ iframe {
   .sm\:inset-x-89\/100 {
     right: 89%;
     left: 89%;
+  }
+
+  .sm\:-inset-y-8 {
+    top: -2rem;
+    bottom: -2rem;
+  }
+
+  .sm\:-inset-x-8 {
+    right: -2rem;
+    left: -2rem;
   }
 
   .sm\:-inset-y-10 {
@@ -23606,6 +23656,22 @@ iframe {
 
   .sm\:left-89\/100 {
     left: 89%;
+  }
+
+  .sm\:-top-8 {
+    top: -2rem;
+  }
+
+  .sm\:-right-8 {
+    right: -2rem;
+  }
+
+  .sm\:-bottom-8 {
+    bottom: -2rem;
+  }
+
+  .sm\:-left-8 {
+    left: -2rem;
   }
 
   .sm\:-top-10 {
@@ -34745,6 +34811,13 @@ iframe {
     left: 89%;
   }
 
+  .md\:-inset-8 {
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+  }
+
   .md\:-inset-10 {
     top: -2.5rem;
     right: -2.5rem;
@@ -35235,6 +35308,16 @@ iframe {
   .md\:inset-x-89\/100 {
     right: 89%;
     left: 89%;
+  }
+
+  .md\:-inset-y-8 {
+    top: -2rem;
+    bottom: -2rem;
+  }
+
+  .md\:-inset-x-8 {
+    right: -2rem;
+    left: -2rem;
   }
 
   .md\:-inset-y-10 {
@@ -36015,6 +36098,22 @@ iframe {
 
   .md\:left-89\/100 {
     left: 89%;
+  }
+
+  .md\:-top-8 {
+    top: -2rem;
+  }
+
+  .md\:-right-8 {
+    right: -2rem;
+  }
+
+  .md\:-bottom-8 {
+    bottom: -2rem;
+  }
+
+  .md\:-left-8 {
+    left: -2rem;
   }
 
   .md\:-top-10 {
@@ -47154,6 +47253,13 @@ iframe {
     left: 89%;
   }
 
+  .lg\:-inset-8 {
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+  }
+
   .lg\:-inset-10 {
     top: -2.5rem;
     right: -2.5rem;
@@ -47644,6 +47750,16 @@ iframe {
   .lg\:inset-x-89\/100 {
     right: 89%;
     left: 89%;
+  }
+
+  .lg\:-inset-y-8 {
+    top: -2rem;
+    bottom: -2rem;
+  }
+
+  .lg\:-inset-x-8 {
+    right: -2rem;
+    left: -2rem;
   }
 
   .lg\:-inset-y-10 {
@@ -48424,6 +48540,22 @@ iframe {
 
   .lg\:left-89\/100 {
     left: 89%;
+  }
+
+  .lg\:-top-8 {
+    top: -2rem;
+  }
+
+  .lg\:-right-8 {
+    right: -2rem;
+  }
+
+  .lg\:-bottom-8 {
+    bottom: -2rem;
+  }
+
+  .lg\:-left-8 {
+    left: -2rem;
   }
 
   .lg\:-top-10 {
@@ -59563,6 +59695,13 @@ iframe {
     left: 89%;
   }
 
+  .xl\:-inset-8 {
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+  }
+
   .xl\:-inset-10 {
     top: -2.5rem;
     right: -2.5rem;
@@ -60053,6 +60192,16 @@ iframe {
   .xl\:inset-x-89\/100 {
     right: 89%;
     left: 89%;
+  }
+
+  .xl\:-inset-y-8 {
+    top: -2rem;
+    bottom: -2rem;
+  }
+
+  .xl\:-inset-x-8 {
+    right: -2rem;
+    left: -2rem;
   }
 
   .xl\:-inset-y-10 {
@@ -60833,6 +60982,22 @@ iframe {
 
   .xl\:left-89\/100 {
     left: 89%;
+  }
+
+  .xl\:-top-8 {
+    top: -2rem;
+  }
+
+  .xl\:-right-8 {
+    right: -2rem;
+  }
+
+  .xl\:-bottom-8 {
+    bottom: -2rem;
+  }
+
+  .xl\:-left-8 {
+    left: -2rem;
   }
 
   .xl\:-top-10 {
