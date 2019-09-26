@@ -70,6 +70,9 @@ module.exports = {
     	},
     	fontSize: {
     		'tiny': '.55rem',
+    	},
+    	colors: {
+    		neongreen: '#37ff37',
     	}
     }
   },
