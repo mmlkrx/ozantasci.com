@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black text-white">
-  <div class="p-4 bg-gray w-screen max-w-full max-h-full">
+  <div class="p-4 md:px-8 bg-gray w-screen max-w-full max-h-full">
     <div id="video-name" class="absolute bottom-0 right-4 text-tiny font-extrabold"></div>
     <ul class="menu-social text-tiny font-extrabold absolute">
       <span class="mr-2 hover:text-neongreen"><a href="https://www.instagram.com/ozantasci_/" target="_blank">INSTAGRAM</a></span>
@@ -25,7 +25,7 @@
       <span id="editing-btn" class="hover:text-neongreen cursor-pointer mr-6 md:mr-8 xl:mr-16">editing</span>
       <span id="grading-btn" class="hover:text-neongreen cursor-pointer">grading</span>
     </nav>
-    <div class="relative h-screen">
+    <div class="relative" style="height:95vh;">
       <div class="video video-editing cursor-pointer md:absolute md:w-1/12 md:left-5/100 md:top-15/100 z-30" data-name="VERTIGO 'STAN'" onmouseover="videoName.innerHTML = this.dataset.name;this.children[1].style.zIndex = 49;" onmouseout="videoName.innerHTML = '';">
         <iframe class="hidden" src="https://player.vimeo.com/video/205709481?color=ffffff&title=0&byline=0&portrait=0" width="640" height="487" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         <video class="absolute" onmouseover="this.play()" onmouseout="this.pause();this.style.zIndex = 'initial';this.currentTime = 0;" loop>
