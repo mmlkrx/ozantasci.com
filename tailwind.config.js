@@ -1,5 +1,9 @@
 module.exports = {
   theme: {
+  	fontFamily: {
+  		'astloch': 'Astloch, sans-serif',
+  		'sans': ['"Work Sans"', 'sans-serif'],
+  	},
     extend: {
     	inset: {
     		'1/30': '3.333333%',
@@ -76,6 +80,7 @@ module.exports = {
     	},
     	zIndex: {
     		'60': '60',
+    		'70': '70',
     	}
     }
   },

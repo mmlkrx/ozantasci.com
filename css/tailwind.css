@@ -8,13 +8,6 @@
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-* {
-  /*border: 1px white dashed;*/
-}
-
-iframe {
-}
-
 .video-portrait {
   height: 80vh;
   width: fit-content;
@@ -22,6 +15,6 @@ iframe {
 
 .menu-social {
   transform: rotate(-90deg);
-  right: -66px;
-  top: 82px;
+  right: -60px;
+  top: 78px;
 }

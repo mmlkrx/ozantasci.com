@@ -567,7 +567,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -3633,16 +3633,12 @@ video {
   clear: both;
 }
 
+.font-astloch {
+  font-family: Astloch, sans-serif;
+}
+
 .font-sans {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.font-serif {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Work Sans", sans-serif;
 }
 
 .font-hairline {
@@ -13147,6 +13143,10 @@ video {
   z-index: 60;
 }
 
+.z-70 {
+  z-index: 70;
+}
+
 .z-auto {
   z-index: auto;
 }
@@ -13158,13 +13158,6 @@ video {
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-* {
-  /*border: 1px white dashed;*/
-}
-
-iframe {
-}
-
 .video-portrait {
   height: 80vh;
   width: -webkit-fit-content;
@@ -13174,8 +13167,8 @@ iframe {
 
 .menu-social {
   transform: rotate(-90deg);
-  right: -66px;
-  top: 82px;
+  right: -60px;
+  top: 78px;
 }
 
 @media (min-width: 640px) {
@@ -16181,16 +16174,12 @@ iframe {
     clear: both;
   }
 
+  .sm\:font-astloch {
+    font-family: Astloch, sans-serif;
+  }
+
   .sm\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .sm\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: "Work Sans", sans-serif;
   }
 
   .sm\:font-hairline {
@@ -25695,6 +25684,10 @@ iframe {
     z-index: 60;
   }
 
+  .sm\:z-70 {
+    z-index: 70;
+  }
+
   .sm\:z-auto {
     z-index: auto;
   }
@@ -28703,16 +28696,12 @@ iframe {
     clear: both;
   }
 
+  .md\:font-astloch {
+    font-family: Astloch, sans-serif;
+  }
+
   .md\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .md\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: "Work Sans", sans-serif;
   }
 
   .md\:font-hairline {
@@ -38217,6 +38206,10 @@ iframe {
     z-index: 60;
   }
 
+  .md\:z-70 {
+    z-index: 70;
+  }
+
   .md\:z-auto {
     z-index: auto;
   }
@@ -41225,16 +41218,12 @@ iframe {
     clear: both;
   }
 
+  .lg\:font-astloch {
+    font-family: Astloch, sans-serif;
+  }
+
   .lg\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .lg\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: "Work Sans", sans-serif;
   }
 
   .lg\:font-hairline {
@@ -50739,6 +50728,10 @@ iframe {
     z-index: 60;
   }
 
+  .lg\:z-70 {
+    z-index: 70;
+  }
+
   .lg\:z-auto {
     z-index: auto;
   }
@@ -53747,16 +53740,12 @@ iframe {
     clear: both;
   }
 
+  .xl\:font-astloch {
+    font-family: Astloch, sans-serif;
+  }
+
   .xl\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .xl\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: "Work Sans", sans-serif;
   }
 
   .xl\:font-hairline {
@@ -63259,6 +63248,10 @@ iframe {
 
   .xl\:z-60 {
     z-index: 60;
+  }
+
+  .xl\:z-70 {
+    z-index: 70;
   }
 
   .xl\:z-auto {
