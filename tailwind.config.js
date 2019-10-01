@@ -73,6 +73,9 @@ module.exports = {
     	},
     	colors: {
     		neongreen: '#37ff37',
+    	},
+    	zIndex: {
+    		'60': '60',
     	}
     }
   },
