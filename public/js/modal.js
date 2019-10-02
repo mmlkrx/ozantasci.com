@@ -1,9 +1,10 @@
 var modal = document.getElementById("myModal");
 var aboutPageContent = document.getElementById("about-content");
+var imprintContent = document.getElementById("imprint-content");
 var videoName = document.getElementById("video-name");
 
 document.addEventListener('click', function (event) {
-  if (!(event.target.matches('#about-btn') || event.target.closest('.video') || event.target.closest('.close-btn') || event.target.closest('#editing-btn') || event.target.closest('#ozzy-btn') || event.target.closest('#grading-btn'))) return; // if we don't click any of these special elements, don't do anything, if we do, continue with doing different things depending on the element
+  if (!(event.target.matches('#about-btn') || event.target.closest('.video') || event.target.closest('.close-btn') || event.target.closest('#editing-btn') || event.target.closest('#ozzy-btn') || event.target.closest('#grading-btn') || event.target.matches('#imprint-btn'))) return; // if we don't click any of these special elements, don't do anything, if we do, continue with doing different things depending on the element
   if (event.target.matches('#about-btn')) {
     aboutPageContent.style.display = "flex";
     aboutPageContent.className = 'modal w-screen h-screen flex justify-center items-center text-white fixed top-0 z-70';
@@ -24,6 +25,7 @@ document.addEventListener('click', function (event) {
   } else if (event.target.closest('.close-btn')) {
     modal.style.display = "none";
     aboutPageContent.style.display = "none";
+    imprintContent.style.display = "none";
   } else if (event.target.closest('#editing-btn')) {
     // reset editing videos back to 100% brightness
     let editingVideos = document.getElementsByClassName('video-editing');
@@ -55,6 +57,10 @@ document.addEventListener('click', function (event) {
         editingVideos[i].style.filter = "brightness(15%)";
       }
     }
+  } else if (event.target.matches('#imprint-btn')) {
+    aboutPageContent.style.display = "none";
+    imprintContent.style.display = "flex";
+    imprintContent.className = 'modal z-70 fixed flex justify-center left-0 top-0 w-full h-full overflow-scroll';
   }
 }, false);
 
