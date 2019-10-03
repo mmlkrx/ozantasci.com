@@ -77,3 +77,8 @@ window.onclick = function(event) {
     aboutPageContent.style.display = "none";
   }
 }
+
+function handleMouseLeaveVideo(event) {
+  event.target.style.removeProperty('z-index'); // remove inline z-index and default back to initial value set with z-{} class
+  videoName.innerHTML = ''; // reset video display value to empty
+}
