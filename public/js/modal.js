@@ -4,6 +4,10 @@ var imprintContent = document.getElementById("imprint-content");
 var websiteGate = document.getElementById("website-gate");
 var videoName = document.getElementById("video-name");
 
+function playVideo(video) {
+  video.play();
+}
+
 document.addEventListener('click', function (event) {
   if (!(event.target.matches('#about-btn') || event.target.closest('.video') || event.target.closest('.close-btn') || event.target.closest('#editing-btn') || event.target.closest('#ozzy-btn') || event.target.closest('#grading-btn') || event.target.matches('#imprint-btn') || event.target.matches('#website-gate-btn'))) return; // if we don't click any of these special elements, don't do anything, if we do, continue with doing different things depending on the element
   if (event.target.matches('#about-btn')) {
@@ -28,34 +32,47 @@ document.addEventListener('click', function (event) {
     aboutPageContent.style.display = "none";
     imprintContent.style.display = "none";
   } else if (event.target.closest('#editing-btn')) {
-    // reset editing videos back to 100% brightness
+    // reset editing videos back to 100% brightness and remove inline z-index
     let editingVideos = document.getElementsByClassName('video-editing');
     for(var i=0; i < editingVideos.length; i++) {
       editingVideos[i].style.filter = "brightness(100%)";
+      editingVideos[i].style.removeProperty('z-index');
+      let video = editingVideos[i].querySelector('video');
+      video.onmouseover = function() { playVideo(video) };
     }
     // dim grading videos
     let gradingVideos = document.getElementsByClassName('video-grading');
     for(var i=0; i < gradingVideos.length; i++) {
       if (!gradingVideos[i].classList.contains('video-editing')) {
         gradingVideos[i].style.filter = "brightness(15%)";
+        gradingVideos[i].style.zIndex = -1;
+        gradingVideos[i].querySelector('video').removeAttribute('onmouseover');
       }
     }
   } else if (event.target.closest('#ozzy-btn')) {
     let allVideos = document.getElementsByClassName('video');
     for(var i=0; i < allVideos.length; i++) {
       allVideos[i].style.filter = "brightness(100%)";
+      allVideos[i].style.removeProperty('z-index');
+      let video = allVideos[i].querySelector('video');
+      video.onmouseover = function() { playVideo(video) };
     }
   } else if (event.target.closest('#grading-btn')) {
     // reset grading videos back to 100% brightness
     let gradingVideos = document.getElementsByClassName('video-grading');
     for(var i=0; i < gradingVideos.length; i++) {
       gradingVideos[i].style.filter = "brightness(100%)";
+      gradingVideos[i].style.removeProperty('z-index');
+      let video = gradingVideos[i].querySelector('video');
+      video.onmouseover = function() { playVideo(video) };
     }
     // dim editing videos
     let editingVideos = document.getElementsByClassName('video-editing');
     for(var i=0; i < editingVideos.length; i++) {
       if (!editingVideos[i].classList.contains('video-grading')) {
         editingVideos[i].style.filter = "brightness(15%)";
+        editingVideos[i].style.zIndex = -1;
+        editingVideos[i].querySelector('video').removeAttribute('onmouseover');
       }
     }
   } else if (event.target.matches('#imprint-btn')) {
