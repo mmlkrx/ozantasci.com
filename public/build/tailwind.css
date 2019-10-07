@@ -13171,6 +13171,14 @@ video {
   top: 78px;
 }
 
+@media (min-width: 1280px) {
+  .menu-social {
+    transform: rotate(-90deg);
+    right: -78px;
+    top: 94px;
+  }
+}
+
 /* https://embedresponsively.com/ */
 
 .embed-container {
