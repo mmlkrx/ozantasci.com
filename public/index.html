@@ -9,233 +9,27 @@
   <link rel="stylesheet" href="build/tailwind.css">
 </head>
 <body class="bg-black text-white">
-  <div class="p-4 md:px-8 bg-gray w-screen max-w-full max-h-full">
-    <div id="video-name" class="absolute bottom-0 right-4 text-tiny xl:text-xs font-extrabold"></div>
-    <ul class="menu-social font-sans hidden md:block text-tiny xl:text-xs font-extrabold absolute">
+  <div class="font-sans p-4 md:px-8 bg-gray w-screen max-w-full max-h-full">
+    <div id="sound-toggle" class="absolute bottom-0 right-4 md:text-tiny xl:text-xs font-extrabold z-50"><span>SOUND:</span><span class="text-red-600"> OFF</span>
+    </div>
+    <ul class="menu-social-home font-sans text-xs font-extrabold absolute z-50">
       <span class="mr-2 hover:text-neongreen"><a href="https://www.instagram.com/ozantasci_/" target="_blank">INSTAGRAM</a></span>
       <span class="mr-2 hover:text-neongreen"><a href="https://vimeo.com/ozantasci" target="_blank">VIMEO</a></span>
       <span class="hover:text-neongreen"><a href="mailto:info@ozantasci.com">E-MAIL</a></span>
     </ul>
-    <ul class="menu-about font-sans fixed w-screen bg-black py-4 md:py-0 md:w-auto md:bg-transparent md:text-tiny xl:text-xs md:font-extrabold md:absolute bottom-0 z-50">
+    <ul class="menu-about font-sans font-extrabold fixed w-screen md:w-auto md:text-tiny xl:text-xs md:absolute bottom-0 z-50">
       <span class="cursor-pointer mr-2 hover:text-neongreen" id="about-btn">ABOUT</span>
-      <span>→ 0157 30337727</span>
+      <span class="mr-2 hidden md:inline">→ 0157 30337727</span>
+      <span>IMPRINT</span>
     </ul>
-    <nav class="font-astloch font-bold fixed bg-black top-0 w-screen py-4 text-xl md:text-4xl xl:text-5xl md:absolute md:top-44/100 z-60 md:w-auto md:bg-transparent">
+    <nav class="font-astloch font-bold fixed top-0 w-screen py-4 text-3xl md:text-4xl xl:text-5xl md:absolute md:top-44/100 z-60 md:w-auto">
       <span id="ozzy-btn" class="cursor-pointer mr-4 md:mr-16 xl:mr-24">O. Tasci</span>
-      <span id="editing-btn" class="hover:text-neongreen cursor-pointer mr-4 md:mr-8 xl:mr-16">videoediting</span>
-      <span id="grading-btn" class="hover:text-neongreen cursor-pointer">colorgrading</span>
+      <a href="/work.html" id="editing-btn" class="hover:text-neongreen cursor-pointer mr-4 md:mr-8 xl:mr-16">videoediting</a href="/work.html">
+      <a href="/work.html" id="grading-btn" class="hover:text-neongreen cursor-pointer">colorgrading</a href="/work.html">
     </nav>
-    <div class="relative" style="height:95vh;">
-      <div class="video video-editing cursor-pointer md:absolute md:w-1/12 md:left-5/100 md:top-15/100 z-30" data-name="VERTIGO 'STAN'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/205709481?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/vertigo_stan.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/vertigo_stan.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-editing video-grading cursor-pointer md:absolute md:w-21/100 md:left-10/100" data-name="CLOCKHOUSE '90'S SPORT'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/361754319?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-        <video poster="img/clockhouse_90s_sport.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/clockhouse_90s_sport.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-editing video-grading cursor-pointer md:absolute md:w-21/100 md:left-28/100 md:top-4/30 z-30" data-name="C&A 'BLOGGER BUDAPEST'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/359363528?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/ca_blogger_budapest.png" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/ca_blogger_budapest.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-grading cursor-pointer md:absolute md:w-8/30 md:left-13/30 z-20" data-name="DIE SAMMLERIN" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/157830504?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/die_sammlerin.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/die_sammlerin.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-editing cursor-pointer md:absolute md:w-11/30 md:left-54/100 md:top-4/30 md:z-10" data-name="IAA COMMUNICATION" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/228678898?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/iaa_communication.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/iaa_communication.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-grading cursor-pointer md:absolute md:w-13/100 md:left-73/100 md:top-6/100" data-name="DAWNSTAR" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/147222979?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/dawnstar.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/dawnstar.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-grading cursor-pointer md:absolute md:w-11/100 md:right-0" data-name="ADIDAS 'HOME OF CLASSICS 2'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden video-portrait" src="https://player.vimeo.com/video/357061741?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/adidas_home_of_classics_2.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/adidas_home_of_classics_2.mp4" type="video/mp4">
-        </video>
-      </div>
-
-
-      <div class="video video-grading cursor-pointer md:absolute md:w-11/30 md:top-3/12 md:z-20" data-name="CLOCKHOUSE 'CALIFORNIA BANDIT'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 59;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/359365226?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/clockhouse_california_bandit.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/clockhouse_california_bandit.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-editing video-grading cursor-pointer md:absolute md:w-3/12 md:left-28/100 md:top-47/100 md:z-10" data-name="CLOCKHOUSE 'PARTY'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 59;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/358454203?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/clockhouse_party.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/clockhouse_party.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-editing cursor-pointer md:absolute md:w-15/100 md:left-44/100 md:top-37/100 md:z-20" data-name="WHO AM I" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 59;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/360892607?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/who_am_i.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/who_am_i.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video editing video-editing video-grading cursor-pointer md:absolute md:w-11/100 md:left-61/100 md:top-4/12 z-10" data-name="ADIDAS 'HOME OF CLASSICS 1'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden video-portrait" src="https://player.vimeo.com/video/357056740?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/adidas_home_of_classics_1.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/adidas_home_of_classics_1.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-grading cursor-pointer md:absolute md:w-19/100 md:left-78/100 md:top-55/100 md:z-30" data-name="CLOCKHOUSE 'DAZED'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/358450991?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/clockhouse_dazed.png" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/clockhouse_dazed.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-editing cursor-pointer md:absolute md:w-16/100 md:right-0 md:top-42/100 md:z-10" data-name="VERTIGO 'ROCKS'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/266007340?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/vertigo_rocks.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/vertigo_rocks.mp4" type="video/mp4">
-        </video>
-      </div>
-
-
-      <div class="video video-editing video-grading cursor-pointer md:absolute md:w-12/100 md:left-4/100 md:top-44/100 md:z-30" data-name="ADIDAS 'NITE JOGGER'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 59;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden video-portrait" src="https://player.vimeo.com/video/357179151?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/adidas_nite_jogger.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/adidas_nite_jogger.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-grading cursor-pointer md:absolute md:w-19/100 md:left-9/100 md:top-70/100 md:z-40" data-name="CLOCKHOUSE 'RULE BREAKERS'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 59;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/358451389?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/clockhouse_rule_breakers.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/clockhouse_rule_breakers.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-grading cursor-pointer md:absolute md:w-13/100 md:left-22/100 md:top-56/100 md:z-50" data-name="ADIDAS 'HOME OF CLASSICS 3'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 59;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden video-portrait" src="https://player.vimeo.com/video/357060839?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/adidas_home_of_classics_3.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/adidas_home_of_classics_3.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-grading cursor-pointer md:absolute md:w-15/100 md:left-38/100 md:top-78/100 md:z-10" data-name="LGOONY 'NACHT'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 59;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class ="hidden" src="https://player.vimeo.com/video/358451767?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/lgoony_nacht.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/lgoony_nacht.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-editing cursor-pointer md:absolute md:w-11/30 md:left-44/100 md:top-56/100" data-name="FIGUR LEMUR 'MASTERPLAN'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 59;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/240447619?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/figur_lemur_masterplan.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/figur_lemur_masterplan.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-editing video-grading cursor-pointer md:absolute md:w-8/30 md:left-63/100 md:top-70/100 md:z-10" data-name="GOOQX 'THE STUDIO'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/359366611?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/gooqx_the_studio.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/gooqx_the_studio.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video video-editing cursor-pointer mb-12 md:absolute md:w-24/100 md:left-73/100 md:top-9/12 md:z-20" data-name="DJ TOMEKK 'TEXT YOU BACK'" onmouseover="videoName.innerHTML = this.dataset.name;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
-        <iframe class="hidden" src="https://player.vimeo.com/video/361755269?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <video poster="img/dj_tomekk_text_you_back.jpg" playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
-          <source src="videos/dj_tomekk_text_you_back.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
-
-  <div id="website-gate" class="modal hidden font-sans w-screen h-screen flex flex-col justify-center items-center text-center fixed top-0 z-70">
-    <button id="website-gate-btn" class="mb-4 p-2 text-xl border-solid border-2 border-white">ENTER</button>
-    <p class="text-xs">(this website is still in progress,<br>please excuse any buggy behavior,<br>or better, let me know about it!)</p>
-  </div>
-
-  <div id="about-content" class="font-sans 
-modal hidden w-screen h-screen flex justify-center items-center text-white fixed top-0 z-70">
-    <svg class="close-btn w-8 cursor-pointer absolute top-4 right-4 fill-current text-white z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-      <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
-    </svg>
-    <div class="p-4 pt-16 md:pt-24 about-text text-2xl relative">
-      <img class="hidden md:block w-45/100 absolute -top-4 -left-20" style="z-index: -1;" src="img/ozzy_about.jpg">
-      <p>Hey, most people call me Ozzy.</p>
-      <p>I'm a videoeditor based in Düsseldorf</p>
-      <p class="mb-4">and also love to do digital colorgrading.</p>
-      <p>Previously worked at <a class="hover:text-neongreen" href="https://omstudios.de/" target="_blank">Omstudios</a>, <a class="hover:text-neongreen" href="http://www.congaz.de/" target="_blank">Congaz</a> and <a class="hover:text-neongreen" href="https://gooqx.com/" target="_blank">Gooqx</a>.</p>
-      <p class="mb-4">Now doing freelance work.</p>
-      <p>Feel free to get in touch.</p>
-      <p class="mb-8"><a href="mailto:info@ozantasci.com">info@ozantasci.com</a></p>
-      <ul class="text-xs md:text-tiny font-extrabold">
-        <span class="mr-2 hover:text-neongreen"><a href="https://www.instagram.com/ozantasci_/" target="_blank">INSTAGRAM</a></span>
-        <span class="mr-2 hover:text-neongreen"><a href="https://vimeo.com/ozantasci" target="_blank">VIMEO</a></span>
-        <span class="hover:text-neongreen"><a href="mailto:info@ozantasci.com">E-MAIL</a></span>
-        <span id="imprint-btn" class="hover:text-neongreen absolute right-4 cursor-pointer">IMPRINT</span>
-      </ul>
-    </div>
-  </div>
-
-  <div id="myModal" class="modal hidden fixed flex items-center justify-center z-60 left-0 top-0 w-full h-full overflow-auto">
-    <div class="mx-auto embed-container" style="width:100%;">
-    </div>
-    <img class="absolute" style="z-index:-1;" src="img/oval.svg" />
-    <svg class="close-btn w-8 cursor-pointer absolute top-4 right-4 fill-current text-white z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-      <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
-    </svg>
-  </div>
-
-  <div id="imprint-content" class="modal hidden z-70 fixed flex justify-center left-0 top-0 w-full h-full overflow-scroll">
-    <svg class="close-btn w-8 cursor-pointer fixed top-4 right-4 fill-current text-white z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-      <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
-    </svg>
-    <div class="p-4 pt-16 md:pt-24 text-2xl relative">
-      <h2 class="mb-4">Impressum</h2>
-      <h3 class="mb-4">Angaben gemäß § 5 TMG</h3>
-
-      <p class="mb-4">Ozan Tasci<br>
-      Heresbachstrasse 14<br>
-      40223 Düsseldorf<br>
-      Vertreten durch:<br>
-      Ozan Tasci<br>
-      Kontakt:<br>
-      Telefon: 0049-15730337727<br>
-      E-Mail: info@ozantasci.com<br></p>
-
-      <p class="mb-4">Steuernummer: 106/5353/4464, Finanzamt Düsseldorf-Süd</p>
-
-      <p class="mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</p>
-      <p class="mb-4">Ozan Tasci<br>
-      Heresbachstrasse 14<br>
-      40223 Düsseldorf</p>
-
-      <p>Haftungsausschluss:</p>
-
-      <h3 class="mb-4 font-bold">Haftung für Inhalte</h3>
-
-      <p class="mb-4">Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
-
-      <h3 class="mb-4 font-bold">Haftung für Links</h3>
-
-      <p class="mb-4">Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
-
-      <h3 class="mb-4 font-bold">Urheberrecht</h3>
-
-      <p class="mb-4">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
-
-      <h3 class="mb-4 font-bold">Datenschutz</h3>
-
-      <p class="mb-4">Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
-      Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
-      Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
-    </div>
+    <video autoplay playsinline muted loop class="object-cover fixed right-0 bottom-0 w-full h-full">
+      <source src="videos/showreel.mp4" type="video/mp4">
+    </video>
   </div>
 </body>
-<script type="text/javascript" src="js/modal.js"></script>
 </html>

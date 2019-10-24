@@ -13216,6 +13216,20 @@ video {
   }
 }
 
+.menu-social-home {
+  transform: rotate(-90deg);
+  right: -75px;
+  top: 106px;
+}
+
+@media (min-width: 1280px) {
+  .menu-social-home {
+    transform: rotate(-90deg);
+    right: -78px;
+    top: 94px;
+  }
+}
+
 /* https://embedresponsively.com/ */
 
 .embed-container {
