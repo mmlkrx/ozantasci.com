@@ -90,3 +90,9 @@ imprintButton.addEventListener("click", function(event) { triggerModal(event) })
 imprintButton.addEventListener("click", function() { muteVideo() });
 
 soundToggleButton.onclick = function(event) { toggleMute(event) };
+
+function hideSpinner() {
+  document.getElementById("loading-spinner").style.display = "none";
+}
+
+video.addEventListener('canplaythrough', function() { hideSpinner() });
