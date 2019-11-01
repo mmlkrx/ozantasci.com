@@ -8,14 +8,14 @@ var imprintButton = document.getElementById("imprint-btn");
 function toggleMute() {
   if (video.muted){
     video.muted = false;
-    soundToggleButton.innerText = " ON";
-    soundToggleButton.classList.remove("text-red-600");
-    soundToggleButton.classList.add("text-neongreen");
+    soundToggleButton.querySelector("#sound-on-off").innerText = " ON";
+    soundToggleButton.querySelector("#sound-on-off").classList.remove("text-red-600");
+    soundToggleButton.querySelector("#sound-on-off").classList.add("text-neongreen");
   } else {
     video.muted = true;
-    soundToggleButton.innerText = " OFF"
-    soundToggleButton.classList.add("text-red-600");
-    soundToggleButton.classList.remove("text-neongreen");
+    soundToggleButton.querySelector("#sound-on-off").innerText = " OFF"
+    soundToggleButton.querySelector("#sound-on-off").classList.add("text-red-600");
+    soundToggleButton.querySelector("#sound-on-off").classList.remove("text-neongreen");
   }
 }
 
