@@ -48,6 +48,31 @@ window.onclick = function(event) {
   }
 }
 
+var menus = document.getElementsByClassName("toggle-visibility");
+var timedelay = 1;
+var _delay = setInterval(delayCheck, 500);
+
+function delayCheck() {
+  if (timedelay == 3) {
+    for(var i=0; i < menus.length; i++) {
+      menus[i].classList.add("hide");
+      menus[i].classList.remove("show");
+    }
+    timedelay = 1;
+  }
+  timedelay = timedelay + 1;
+}
+
+window.onmousemove = function() {
+  for(var i=0; i < menus.length; i++) {
+    menus[i].classList.add("show");
+    menus[i].classList.remove("hide");
+  }
+  timedelay = 1;
+  clearInterval(_delay);
+  _delay = setInterval(delayCheck, 500);
+}
+
 soundToggleButton.onclick = function(event) { toggleMute(event) };
 aboutButton.onclick = function(event) { triggerModal(event) };
 imprintButton.onclick = function(event) { triggerModal(event) };
