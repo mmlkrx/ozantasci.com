@@ -5,6 +5,17 @@ var aboutPageContent = document.getElementById("about-content");
 var imprintContent = document.getElementById("imprint-content");
 var imprintButton = document.getElementById("imprint-btn");
 
+function muteVideo() {
+  if (video.muted){
+    return;
+  } else {
+    video.muted = true;
+    soundToggleButton.querySelector("#sound-on-off").innerText = " OFF"
+    soundToggleButton.querySelector("#sound-on-off").classList.add("text-red-600");
+    soundToggleButton.querySelector("#sound-on-off").classList.remove("text-neongreen");
+  }
+}
+
 function toggleMute() {
   if (video.muted){
     video.muted = false;
@@ -73,6 +84,9 @@ window.onmousemove = function() {
   _delay = setInterval(delayCheck, 500);
 }
 
+aboutButton.addEventListener("click", function(event) { triggerModal(event) });
+aboutButton.addEventListener("click", function() { muteVideo() });
+imprintButton.addEventListener("click", function(event) { triggerModal(event) });
+imprintButton.addEventListener("click", function() { muteVideo() });
+
 soundToggleButton.onclick = function(event) { toggleMute(event) };
-aboutButton.onclick = function(event) { triggerModal(event) };
-imprintButton.onclick = function(event) { triggerModal(event) };
