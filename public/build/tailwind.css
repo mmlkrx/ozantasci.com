@@ -13253,6 +13253,18 @@ video {
   height: 100%;
 }
 
+.hide {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity .5s ease-in-out;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
