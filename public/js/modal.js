@@ -1,7 +1,6 @@
 var modal = document.getElementById("myModal");
 var aboutPageContent = document.getElementById("about-content");
 var imprintContent = document.getElementById("imprint-content");
-var websiteGate = document.getElementById("website-gate");
 var videoName = document.getElementById("video-name");
 
 var allVideos = document.getElementsByClassName('video');
@@ -13,7 +12,6 @@ var gradingButton = document.getElementById("grading-btn");
 var ozzyButton = document.getElementById("ozzy-btn");
 var aboutButton = document.getElementById("about-btn");
 var imprintButton = document.getElementById("imprint-btn");
-var websiteGateButton = document.getElementById("website-gate-btn");
 
 function playVideo(video) {
   video.play();
@@ -120,7 +118,3 @@ ozzyButton.onclick = function(event) {
 aboutButton.onclick = function(event) { triggerModal(event) };
 
 imprintButton.onclick = function(event) { triggerModal(event) };
-
-websiteGateButton.onclick = function(event) {
-  websiteGate.style.display = "none";
-}
