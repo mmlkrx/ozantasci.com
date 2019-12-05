@@ -6,11 +6,11 @@
   <title>Ozan Tasci</title>
   <link href="https://fonts.googleapis.com/css?family=Astloch:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="build/tailwind.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="bg-black text-white">
   <div class="flex w-screen h-screen items-center justify-center">
-    <img id="loading-spinner" src="img/oval.svg" />
+    <img id="loading-spinner" src="/img/oval.svg" />
   </div>
   <div class="font-sans p-4 md:px-8 bg-gray w-screen max-w-full max-h-full">
     <div class="toggle-visibility hide absolute bottom-0 right-4 md:text-xs font-extrabold z-50"><div id="sound-toggle" hide class="cursor-pointer"><span>SOUND:</span><span id="sound-on-off" class="text-red-600 cursor-pointer hover:text-neongreen"> OFF</span></div>
@@ -27,9 +27,9 @@
     </ul>
     <nav class="font-astloch font-bold fixed top-0 w-screen py-4 text-3xl md:text-4xl xl:text-5xl md:absolute md:top-44/100 z-60 md:w-auto">
       <span id="ozzy-btn" class="cursor-pointer mr-4 md:mr-16 xl:mr-24">O. Tasci</span>
-      <a href="/work.html" id="editing-btn" class="toggle-visibility hide hover:text-neongreen cursor-pointer mr-4 md:mr-8 xl:mr-16">projects</a href="/work.html">
+      <a href="/work" id="editing-btn" class="toggle-visibility hide hover:text-neongreen cursor-pointer mr-4 md:mr-8 xl:mr-16">projects</a>
     </nav>
-    <video poster="img/reel_thumbnail.jpg" id="showreel" autoplay playsinline muted loop class="object-cover fixed right-0 bottom-0 w-full h-full">
+    <video poster="/img/reel_thumbnail.jpg" id="showreel" autoplay playsinline muted loop class="object-cover fixed right-0 bottom-0 w-full h-full">
       <source src="videos/REEL_12_RF_26.mp4" type="video/mp4">
     </video>
   </div>
@@ -40,7 +40,7 @@ modal hidden w-screen h-screen flex justify-center items-center text-white fixed
       <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
     </svg>
     <div class="p-4 pt-16 md:pt-24 about-text text-2xl relative">
-      <img class="hidden md:block w-45/100 absolute -top-4 -left-20" style="z-index: -1;" src="img/ozzy_about.jpg">
+      <img class="hidden md:block w-45/100 absolute -top-4 -left-20" style="z-index: -1;" src="/img/ozzy_about.jpg">
       <p>Hey, most people call me Ozzy.</p>
       <p>I'm a videoeditor based in Düsseldorf</p>
       <p class="mb-4">and also love to do digital colorgrading.</p>
@@ -102,5 +102,5 @@ modal hidden w-screen h-screen flex justify-center items-center text-white fixed
     </div>
   </div>
 </body>
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
 </html>

@@ -2,7 +2,9 @@
   "name": "ozantasci.com",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+    "build:dev": "postcss site/css/styles.css -o _site/css/styles.css",
+    "build:prod": "NODE_ENV=production postcss site/css/styles.css -o _site/css/styles.css && npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy  --serve"
   },
   "dependencies": {
     "autoprefixer": "^9.6.1",
