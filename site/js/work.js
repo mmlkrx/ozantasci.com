@@ -72,7 +72,6 @@ window.onclick = function(event) {
 function showVideos(type) {
   switch(type) {
     case 'grading':
-      // set videos to 100% brightness, remove inline z-index and allow play on hover
       for(var i=0; i < gradingVideos.length; i++) {
         gradingVideos[i].style.filter = "brightness(100%)";
         gradingVideos[i].style.removeProperty('z-index');
@@ -81,7 +80,6 @@ function showVideos(type) {
       }
       break;
     case 'editing':
-      // set videos to 100% brightness, remove inline z-index and allow play on hover
       for(var i=0; i < editingVideos.length; i++) {
         editingVideos[i].style.filter = "brightness(100%)";
         editingVideos[i].style.removeProperty('z-index');
@@ -95,19 +93,17 @@ function showVideos(type) {
 function hideVideos(type) {
   switch(type) {
     case 'grading':
-      // dim videos, add negative z-index, disable play on hover
       for(var i=0; i < gradingVideos.length; i++) {
         gradingVideos[i].style.filter = "brightness(15%)";
         gradingVideos[i].style.zIndex = -1;
-        gradingVideos[i].querySelector('video').removeAttribute('onmouseover');
+        gradingVideos[i].querySelector('video').removeAttribute('onmouseover'); // disable play on hover
       }
       break;
     case 'editing':
-      // dim videos, add negative z-index, disable play on hover
       for(var i=0; i < editingVideos.length; i++) {
         editingVideos[i].style.filter = "brightness(15%)";
         editingVideos[i].style.zIndex = -1;
-        editingVideos[i].querySelector('video').removeAttribute('onmouseover');
+        editingVideos[i].querySelector('video').removeAttribute('onmouseover'); // disable play on hover
       }
       break;
   }
@@ -116,19 +112,13 @@ function hideVideos(type) {
 editingButton.onclick = function(event) {
   switch(editingButton.classList.contains('active')) {
     case true:
-      //remove active class
       editingButton.classList.remove("active");
-      //show grading vids
       showVideos('grading');
       break;
     case false:
-      //remove active class from grading button
       gradingButton.classList.remove("active");
-      //add active class
       editingButton.classList.add("active");
-      //hide grading videos
       hideVideos('grading');
-      //show editing videos
       showVideos('editing');
       break;
   }
@@ -137,19 +127,13 @@ editingButton.onclick = function(event) {
 gradingButton.onclick = function(event) {
   switch(gradingButton.classList.contains('active')) {
     case true:
-      //remove active class
       gradingButton.classList.remove("active");
-      //show editing vids
       showVideos('editing');
       break;
     case false:
-      //remove active class from editing button
       editingButton.classList.remove("active");
-      //add active class
       gradingButton.classList.add("active");
-      //hide editing videos
       hideVideos('editing');
-      // show grading videos
       showVideos('grading');
       break;
   }
