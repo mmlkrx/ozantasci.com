@@ -53,6 +53,7 @@ document.addEventListener('click', function (event) {
       modal.classList.remove("hidden");
     }
   } else if (event.target.closest('.close-btn')) {
+    modal.querySelector("iframe").remove();
     modal.classList.add("hidden");
     aboutPageContent.classList.add("hidden");
     imprintContent.classList.add("hidden");
@@ -62,7 +63,7 @@ document.addEventListener('click', function (event) {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    event.target.firstElementChild.innerHTML = ""; // remove iframe in case user clicks play and closes the modal
+    modal.querySelector("iframe").remove();
     modal.classList.add("hidden");
   }
   if (event.target == aboutPageContent) {
