@@ -10,7 +10,8 @@ layout: base.njk
   </ul>
   <ul class="menu-about font-sans fixed w-screen bg-black py-4 md:py-0 md:w-auto md:bg-transparent md:text-tiny xl:text-xs md:font-extrabold md:absolute bottom-0 z-50">
     <span class="cursor-pointer mr-2 hover:text-neongreen" id="about-btn">ABOUT</span>
-    <span>→ 0157 30337727</span>
+    <span class="mr-2 hidden md:inline">→ 0157 30337727</span>
+    <span id="imprint-btn" class="hover:text-neongreen cursor-pointer" >IMPRINT</span>
   </ul>
   <nav class="font-astloch font-bold fixed bg-black top-0 w-screen py-4 text-xl md:text-4xl xl:text-5xl md:absolute md:top-44/100 z-60 md:w-auto md:bg-transparent">
     <span id="ozzy-btn" class="cursor-pointer mr-4 md:mr-16 xl:mr-24">O. Tasci</span>
@@ -146,29 +147,6 @@ layout: base.njk
   </div>
 </div>
 
-<div id="about-content" class="font-sans
-modal hidden w-screen h-screen flex justify-center items-center text-white fixed top-0 z-70">
-  <svg class="close-btn w-8 cursor-pointer absolute top-4 right-4 fill-current text-white z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-    <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
-  </svg>
-  <div class="p-4 pt-16 md:pt-24 about-text text-2xl relative">
-    <img class="hidden md:block w-45/100 absolute -top-4 -left-20" style="z-index: -1;" src="/img/ozzy_about.jpg">
-    <p>Hey, most people call me Ozzy.</p>
-    <p>I'm a videoeditor based in Düsseldorf</p>
-    <p class="mb-4">and also love to do digital colorgrading.</p>
-    <p>Previously worked at <a class="hover:text-neongreen" href="https://omstudios.de/" target="_blank">Omstudios</a>, <a class="hover:text-neongreen" href="http://www.congaz.de/" target="_blank">Congaz</a> and <a class="hover:text-neongreen" href="https://gooqx.com/" target="_blank">Gooqx</a>.</p>
-    <p class="mb-4">Now doing freelance work.</p>
-    <p>Feel free to get in touch.</p>
-    <p class="mb-8"><a href="mailto:info@ozantasci.com">info@ozantasci.com</a></p>
-    <ul class="text-xs md:text-tiny font-extrabold">
-      <span class="mr-2 hover:text-neongreen"><a href="https://www.instagram.com/ozantasci_/" target="_blank">INSTAGRAM</a></span>
-      <span class="mr-2 hover:text-neongreen"><a href="https://vimeo.com/ozantasci" target="_blank">VIMEO</a></span>
-      <span class="hover:text-neongreen"><a href="mailto:info@ozantasci.com">E-MAIL</a></span>
-      <span id="imprint-btn" class="hover:text-neongreen absolute right-4 cursor-pointer">IMPRINT</span>
-    </ul>
-  </div>
-</div>
-
 <div id="myModal" class="modal hidden fixed flex items-center justify-center z-60 left-0 top-0 w-full h-full overflow-auto">
   <div class="mx-auto embed-container" style="width:100%;">
   </div>
@@ -178,49 +156,6 @@ modal hidden w-screen h-screen flex justify-center items-center text-white fixed
   </svg>
 </div>
 
-<div id="imprint-content" class="modal hidden z-70 fixed flex justify-center left-0 top-0 w-full h-full overflow-scroll">
-  <svg class="close-btn w-8 cursor-pointer fixed top-4 right-4 fill-current text-white z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-    <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
-  </svg>
-  <div class="p-4 pt-16 md:pt-24 text-2xl relative">
-    <h2 class="mb-4">Impressum</h2>
-    <h3 class="mb-4">Angaben gemäß § 5 TMG</h3>
-
-    <p class="mb-4">Ozan Tasci<br>
-    Heresbachstrasse 14<br>
-    40223 Düsseldorf<br>
-    Vertreten durch:<br>
-    Ozan Tasci<br>
-    Kontakt:<br>
-    Telefon: 0049-15730337727<br>
-    E-Mail: info@ozantasci.com<br></p>
-
-    <p class="mb-4">Steuernummer: 106/5353/4464, Finanzamt Düsseldorf-Süd</p>
-
-    <p class="mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</p>
-    <p class="mb-4">Ozan Tasci<br>
-    Heresbachstrasse 14<br>
-    40223 Düsseldorf</p>
-
-    <p>Haftungsausschluss:</p>
-
-    <h3 class="mb-4 font-bold">Haftung für Inhalte</h3>
-
-    <p class="mb-4">Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
-
-    <h3 class="mb-4 font-bold">Haftung für Links</h3>
-
-    <p class="mb-4">Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
-
-    <h3 class="mb-4 font-bold">Urheberrecht</h3>
-
-    <p class="mb-4">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
-
-    <h3 class="mb-4 font-bold">Datenschutz</h3>
-
-    <p class="mb-4">Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
-    Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
-    Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
-  </div>
-</div>
+{% include 'about.njk' %}
+{% include 'imprint.njk' %}
 <script type="text/javascript" src="/js/modal.js"></script>
