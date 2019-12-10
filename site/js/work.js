@@ -53,7 +53,7 @@ document.addEventListener('click', function (event) {
       modal.classList.remove("hidden");
     }
   } else if (event.target.closest('.close-btn')) {
-    modal.querySelector("iframe").remove();
+    if (modal.querySelector("iframe")) { modal.querySelector("iframe").remove(); };
     modal.classList.add("hidden");
     aboutPageContent.classList.add("hidden");
     imprintContent.classList.add("hidden");
