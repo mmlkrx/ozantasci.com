@@ -24,13 +24,12 @@ function handleMouseLeaveVideo(event) {
 function triggerModal(event) {
   switch(event.target) {
   case aboutButton:
-    aboutPageContent.style.display = "flex";
-    aboutPageContent.className = 'modal w-screen h-screen flex justify-center items-center text-white fixed top-0 z-70';
+    aboutPageContent.classList.add("flex");
+    aboutPageContent.classList.remove("hidden");
     break;
   case imprintButton:
-    aboutPageContent.style.display = "none";
-    imprintContent.style.display = "flex";
-    imprintContent.className = 'modal z-70 fixed flex justify-center left-0 top-0 w-full h-full overflow-scroll';
+    imprintContent.classList.add("flex");
+    imprintContent.classList.remove("hidden");
     break;
   }
 }
@@ -43,18 +42,20 @@ document.addEventListener('click', function (event) {
       var newHTML = event.target.parentElement.firstElementChild.outerHTML; // save it's HTML
       event.target.parentElement.firstElementChild.className = "hidden video-portrait"; // hiding so it's not showing up behind the modal
       modal.firstElementChild.innerHTML = newHTML; // copy the HTML to the modal
-      modal.style.display = "flex"; // show the modal
+      modal.classList.add("flex");
+      modal.classList.remove("hidden");
     } else {
       event.target.parentElement.firstElementChild.className = "block"; // make hidden video iframe appear
       var newHTML = event.target.parentElement.firstElementChild.outerHTML; // save it's HTML
       event.target.parentElement.firstElementChild.className = "hidden"; // hiding so it's not showing up behind the modal
       modal.firstElementChild.innerHTML = newHTML; // copy the HTML to the modal
-      modal.style.display = "flex"; // show the modal
+      modal.classList.add("flex");
+      modal.classList.remove("hidden");
     }
   } else if (event.target.closest('.close-btn')) {
-    modal.style.display = "none";
-    aboutPageContent.style.display = "none";
-    imprintContent.style.display = "none";
+    modal.classList.add("hidden");
+    aboutPageContent.classList.add("hidden");
+    imprintContent.classList.add("hidden");
   }
 }, false);
 
@@ -62,10 +63,10 @@ document.addEventListener('click', function (event) {
 window.onclick = function(event) {
   if (event.target == modal) {
     event.target.firstElementChild.innerHTML = ""; // remove iframe in case user clicks play and closes the modal
-    modal.style.display = "none";
+    modal.classList.add("hidden");
   }
   if (event.target == aboutPageContent) {
-    aboutPageContent.style.display = "none";
+    aboutPageContent.classList.add("hidden");
   }
 }
 
