@@ -1,6 +1,6 @@
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: [
-    './site/*.njk',
+    './site/**/*.njk',
     './site/js/*.js' // don't forget classes only applied with JS
   ],
 
