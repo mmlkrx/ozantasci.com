@@ -9,7 +9,6 @@ var gradingVideos = document.getElementsByClassName('video-grading');
 
 var editingButton = document.getElementById("editing-btn");
 var gradingButton = document.getElementById("grading-btn");
-var ozzyButton = document.getElementById("ozzy-btn");
 var aboutButton = document.getElementById("about-btn");
 var imprintButton = document.getElementById("imprint-btn");
 
@@ -153,15 +152,6 @@ gradingButton.onclick = function(event) {
       // show grading videos
       showVideos('grading');
       break;
-  }
-}
-
-ozzyButton.onclick = function(event) {
-  for(var i=0; i < allVideos.length; i++) {
-    allVideos[i].style.filter = "brightness(100%)";
-    allVideos[i].style.removeProperty('z-index');
-    let video = allVideos[i].querySelector('video');
-    video.onmouseover = function() { playVideo(video) };
   }
 }
 
