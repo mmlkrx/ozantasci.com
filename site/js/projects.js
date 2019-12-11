@@ -69,6 +69,9 @@ window.onclick = function(event) {
   if (event.target == aboutPageContent) {
     aboutPageContent.classList.add("hidden");
   }
+  if (event.target == imprintContent) {
+    imprintContent.classList.add("hidden");
+  }
 }
 
 function showVideos(type) {
