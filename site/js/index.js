@@ -97,3 +97,11 @@ function hideSpinner() {
 }
 
 video.addEventListener('canplaythrough', function() { hideSpinner() });
+
+window.onkeyup = function(event) {
+  event = event || window.event;
+  if (event.key == "Escape") {
+    imprintContent.classList.add("hidden");
+    aboutPageContent.classList.add("hidden");
+  }
+};

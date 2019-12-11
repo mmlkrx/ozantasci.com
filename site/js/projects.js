@@ -147,3 +147,13 @@ gradingButton.onclick = function(event) {
 aboutButton.onclick = function(event) { triggerModal(event) };
 
 imprintButton.onclick = function(event) { triggerModal(event) };
+
+window.onkeyup = function(event) {
+  event = event || window.event;
+  if (event.key == "Escape") {
+    imprintContent.classList.add("hidden");
+    aboutPageContent.classList.add("hidden");
+    if (modal.querySelector("iframe")) { modal.querySelector("iframe").remove(); };
+    modal.classList.add("hidden");
+  }
+};
