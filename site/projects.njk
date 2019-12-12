@@ -4,7 +4,7 @@ layout: base.njk
 {% include 'menus.njk' %}
 
 <div class="h-screen flex justify-center items-center">
-  <div class="relative overflow-hidden" style="height:95vh;width:95vw;">
+  <div class="relative" style="height:95vh;width:95vw;">
     <div class="video video-editing cursor-pointer md:absolute md:w-13/100 md:left-3/100 md:top-15/100 z-30" data-title="VERTIGO 'STAN'" onmouseover="videoTitle.innerHTML = this.dataset.title;this.style.zIndex = 49;" onmouseleave="handleMouseLeaveVideo(event)">
       <iframe class="hidden" src="https://player.vimeo.com/video/205709481?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
       <video playsinline muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;" loop>
