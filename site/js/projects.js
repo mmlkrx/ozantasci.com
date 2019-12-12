@@ -1,7 +1,7 @@
 var modal = document.getElementById("myModal");
 var aboutPageContent = document.getElementById("about-content");
 var imprintContent = document.getElementById("imprint-content");
-var videoName = document.getElementById("video-name");
+var videoTitle = document.getElementById("video-title");
 
 var allVideos = document.getElementsByClassName('video');
 var editingVideos = document.getElementsByClassName('video-editing');
@@ -18,7 +18,7 @@ function playVideo(video) {
 
 function handleMouseLeaveVideo(event) {
   event.target.style.removeProperty('z-index'); // remove inline z-index and default back to initial value set with z-{} class
-  videoName.innerHTML = ''; // reset video display value to empty
+  videoTitle.innerHTML = ''; // reset video display value to empty
 }
 
 function triggerModal(event) {
