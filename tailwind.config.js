@@ -1,8 +1,15 @@
+const _ = require('lodash')
+
 module.exports = {
   theme: {
     fontFamily: {
         'astloch': 'Astloch, sans-serif',
         'sans': ['"Work Sans"', 'sans-serif'],
+    },
+    rotate: {
+      '1/4': '90deg',
+      '1/2': '180deg',
+      '3/4': '270deg',
     },
     extend: {
         inset: {
@@ -51,12 +58,18 @@ module.exports = {
             '73/100': '73%',
             '78/100': '78%',
             '89/100': '89%',
+            '1': '0.25rem',
+            '2': '0.5rem',
+            '3': '0.75rem',
             '4': '1rem',
+            '32': '8rem',
+            '24': '6rem',
             '-4': '-1rem',
             '-8': '-2rem',
             '-10': '-2.5rem',
             '-12': '-3rem',
             '-16': '-4rem',
+            '-18': '-4.5rem',
             '-20': '-5rem',
             '-24': '-6rem',
             '-32': '-8rem',
@@ -91,5 +104,17 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: []
+  plugins: [
+    function({ addUtilities, config, e }) {
+      const rotateUtilities = _.map(config('theme.rotate'), (value, key) => {
+        return {
+          [`.${e(`rotate-${key}`)}`]: {
+            transform: `rotate(${value})`
+          }
+        }
+      })
+
+      addUtilities(rotateUtilities)
+    }
+  ]
 }
