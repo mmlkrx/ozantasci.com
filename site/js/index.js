@@ -105,3 +105,21 @@ window.onkeyup = function(event) {
     aboutPageContent.classList.add("hidden");
   }
 };
+
+
+var WindowWidth = window.innerWidth;
+
+videoSourceMobile = document.createElement("source");
+videoSourceMobile.src = 'videos/REEL_12_9zu16_RF25_mobile.mp4';
+videoSourceMobile.type = 'video/mp4';
+
+videoSourceDesktop = document.createElement("source");
+videoSourceDesktop.src = 'videos/REEL_12_RF_26.mp4';
+videoSourceDesktop.type = 'video/mp4';
+
+
+if (WindowWidth < 1200) {
+  video.appendChild(videoSourceMobile);
+} else {
+  video.appendChild(videoSourceDesktop);
+}
