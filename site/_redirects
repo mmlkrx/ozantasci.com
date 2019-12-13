@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://ozantasci.netlify.com/* https://www.ozantasci.com/:splat 301!
