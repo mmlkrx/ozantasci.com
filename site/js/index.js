@@ -110,7 +110,7 @@ window.onkeyup = function(event) {
 var WindowWidth = window.innerWidth;
 
 videoSourceMobile = document.createElement("source");
-videoSourceMobile.src = 'videos/REEL_12_9zu16_RF25_mobile.mp4';
+videoSourceMobile.src = 'videos/REEL_12_IPAD_RF26.mp4';
 videoSourceMobile.type = 'video/mp4';
 
 videoSourceDesktop = document.createElement("source");
