@@ -1,6 +1,10 @@
 const _ = require('lodash')
 
 module.exports = {
+  purge: [
+    './site/**/*.njk',
+    './site/js/*.js', // don't forget classes only applied with JS
+  ],
   theme: {
     fontFamily: {
         'astloch': 'Astloch, sans-serif',
