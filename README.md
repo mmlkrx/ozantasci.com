@@ -17,3 +17,7 @@ npm run dev
 Any push to the master branch on Github will notify Netlify and trigger the `npm run build:prod` script. Simply make changes to the files under `site/`, commit them to master, and push to Github.
 
 The `npm run build:prod` command can also be run locally to check if everything looks and works as expected before pushing to master.
+
+# How to add custom css classes to Tailwind
+
+If you want to add a new custom class to have better control over i.e. positioning, just open `tailwind.config.js`, add the necessary classes, then run `npm run build:dev` to be able to use them.
