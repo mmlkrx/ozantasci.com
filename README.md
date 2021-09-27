@@ -1,6 +1,6 @@
 # Overview
 
-This site is build with the [11ty](https://www.11ty.io/) static site generator.
+This site is build with the [11ty](https://www.11ty.io/) static site generator. The website is currently hosted on Netlify, to check deployments and general settings, visit the overview [here](https://app.netlify.com/sites/ozantasci/overview) (login as mmlkrx required).
 
 # How to run and develop locally
 
