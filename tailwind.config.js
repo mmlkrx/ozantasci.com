@@ -1,7 +1,7 @@
 const _ = require('lodash')
 
 module.exports = {
-  purge: [
+  content: [
     './site/**/*.njk',
     './site/js/*.js', // don't forget classes only applied with JS
   ],
@@ -110,7 +110,6 @@ module.exports = {
         }
     }
   },
-  variants: {},
   plugins: [
     function({ addUtilities, config, e }) {
       const rotateUtilities = _.map(config('theme.rotate'), (value, key) => {

@@ -9,6 +9,8 @@ After installing the dependencies, source files can be edited in the `site/` fol
 ```shell
 npm install
 npm run build:dev
+
+# in new console tab
 npm run dev
 ```
 
