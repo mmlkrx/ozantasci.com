@@ -1,32 +1,32 @@
 {% set visibility_classes = "toggle-visibility hide" if page.url == '/' %}
 <div class="font-sans font-extrabold absolute top-0 w-screen h-screen md:text-xs">
   <ul class="{{ visibility_classes }} fixed z-50 rotate-3/4 top-24 -right-16 md:top-18 md:-right-12">
-    <span class="mr-2 hover:text-neongreen"><a href="https://www.instagram.com/ozantasci_/" target="_blank">INSTA</a></span>
-    <span class="mr-2 hover:text-neongreen"><a href="https://vimeo.com/ozantasci" target="_blank">VIMEO</a></span>
-    <span class="hover:text-neongreen"><a href="mailto:info@ozantasci.com">MAIL</a></span>
+    <span class="mr-2 hover:text-neongreen"><a class="umami--click--insta" href="https://www.instagram.com/ozantasci_/" target="_blank">INSTA</a></span>
+    <span class="mr-2 hover:text-neongreen"><a class="umami--click--vimeo" href="https://vimeo.com/ozantasci" target="_blank">VIMEO</a></span>
+    <span class="hover:text-neongreen"><a class="umami--click--email" href="mailto:info@ozantasci.com">MAIL</a></span>
   </ul>
   {% if page.url == '/' -%}
   <div class="{{ visibility_classes }} fixed z-50 bottom-1 right-3 md:text-xs">
     <div id="sound-toggle" hide class="cursor-pointer">
       <span>SOUND:</span>
-      <span id="sound-on-off" class="text-red-600 cursor-pointer hover:text-neongreen"> OFF</span>
+      <span id="sound-on-off" class="text-red-600 cursor-pointer hover:text-neongreen umami--click--toggle-sound"> OFF</span>
     </div>
   </div>
   {% elif page.url == '/projects/' -%}
   <div id="video-title" class="fixed z-50 bottom-1 right-3 shadow-sm md:text-xs"></div>
   {%- endif -%}
   <ul class="{{ visibility_classes }} fixed z-50 w-auto bottom-1 left-3 md:text-xs">
-    <span class="cursor-pointer mr-2 hover:text-neongreen" id="about-btn">ABOUT</span>
+    <span class="cursor-pointer mr-2 hover:text-neongreen umami--click--about" id="about-btn">ABOUT</span>
     <span class="mr-2 hidden md:inline">→ 0157 30337727</span>
-    <span id="imprint-btn" class="hover:text-neongreen cursor-pointer" >IMPRINT</span>
+    <span id="imprint-btn" class="hover:text-neongreen cursor-pointer umami--click--impressum" >IMPRINT</span>
   </ul>
   <nav class="font-astloch font-bold fixed top-0 left-3 w-screen py-4 text-3xl md:text-4xl xl:text-5xl md:absolute md:top-44/100 z-60 md:w-auto">
-    <a href="/" class="cursor-pointer mr-4 md:mr-16 xl:mr-24">O. Tasci</a>
+    <a href="/" class="cursor-pointer mr-4 md:mr-16 xl:mr-24 umami--click--o-tasci">O. Tasci</a>
     {%- if page.url == '/' -%}
-      <a href="/projects" id="editing-btn" class="{{ visibility_classes }} hidden hover:text-neongreen cursor-pointer mr-4 md:inline md:mr-8 xl:mr-16">projects</a>
+      <a href="/projects" id="editing-btn" class="{{ visibility_classes }} hidden hover:text-neongreen cursor-pointer mr-4 md:inline md:mr-8 xl:mr-16 umami--click--projects">projects</a>
     {%- elif page.url == '/projects/' -%}
-      <span id="editing-btn" class="hover:text-neongreen cursor-pointer mr-4 md:mr-8 xl:mr-16">videoediting</span>
-      <span id="grading-btn" class="hover:text-neongreen cursor-pointer">colorgrading</span>
+      <span id="editing-btn" class="hover:text-neongreen cursor-pointer mr-4 md:mr-8 xl:mr-16 umami--click--videoediting">videoediting</span>
+      <span id="grading-btn" class="hover:text-neongreen cursor-pointer umami--click--colorgrading">colorgrading</span>
     {%- endif %}
   </nav>
 </div>
